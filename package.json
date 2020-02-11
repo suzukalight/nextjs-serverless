@@ -16,7 +16,7 @@
   },
   "lint-staged": {
     "./src/**/*.{js,jsx,ts,tsx}": [
-      "yarn lint",
+      "eslint --fix --quiet",
       "git add"
     ]
   },
@@ -24,7 +24,7 @@
     "lint": "yarn cl:lint && yarn sr:lint",
     "cl:lint": "yarn workspace client lint",
     "sr:lint": "yarn workspace server lint",
-    "cl:dev": "yarn workspace client dev -p 3210",
+    "cl:dev": "yarn workspace client dev",
     "sr:dev": "yarn workspace server dev"
   },
   "devDependencies": {

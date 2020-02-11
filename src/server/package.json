@@ -18,6 +18,6 @@
   },
   "scripts": {
     "dev": "ts-node-dev ./src/index.ts",
-    "lint": "eslint '*/**/*.{js,jsx,ts,tsx}' --quiet --fix"
+    "lint": "eslint --ext .jsx,.js,.tsx,.ts --quiet --fix src/"
   }
 }
