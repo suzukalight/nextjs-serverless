@@ -16,15 +16,16 @@
   },
   "lint-staged": {
     "./src/**/*.{js,jsx,ts,tsx}": [
-      "tsc --noEmit",
-      "eslint --fix",
+      "yarn lint",
       "git add"
     ]
   },
   "scripts": {
-    "lint": "yarn cl:lint",
+    "lint": "yarn cl:lint && yarn sr:lint",
     "cl:lint": "yarn workspace client lint",
-    "cl:dev": "yarn workspace client dev -p 3210"
+    "sr:lint": "yarn workspace server lint",
+    "cl:dev": "yarn workspace client dev -p 3210",
+    "sr:dev": "yarn workspace server dev"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.19.2",
