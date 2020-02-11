@@ -2,5 +2,11 @@
   "name": "nextjs-serverless",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "src/*"
+    ]
+  }
 }
