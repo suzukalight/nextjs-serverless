@@ -9,6 +9,18 @@
       "src/*"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "./src/**/*.{js,jsx,ts,tsx}": [
+      "tsc --noEmit",
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "scripts": {
     "lint": "yarn cl:lint",
     "cl:lint": "yarn workspace client lint",
@@ -25,6 +37,8 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-react-hooks": "^2.3.0",
+    "husky": "^4.2.1",
+    "lint-staged": "^10.0.7",
     "prettier": "^1.19.1",
     "typescript": "^3.7.5"
   }
