@@ -8,5 +8,8 @@
     "packages": [
       "src/*"
     ]
+  },
+  "scripts": {
+    "cl:dev": "yarn workspace client dev -p 3210"
   }
 }
