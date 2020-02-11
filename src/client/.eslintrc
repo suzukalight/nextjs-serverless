@@ -1,0 +1,8 @@
+{
+  "extends": ["../../.eslintrc"],
+  "plugins": ["@typescript-eslint", "prettier", "react"],
+  "rules": {
+    "react/jsx-uses-vars": "warn",
+    "react/jsx-uses-react": "warn"
+  }
+}
