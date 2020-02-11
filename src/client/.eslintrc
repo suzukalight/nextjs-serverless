@@ -1,6 +1,9 @@
 {
   "extends": ["../../.eslintrc"],
   "plugins": ["@typescript-eslint", "prettier", "react"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
   "rules": {
     "react/jsx-uses-vars": "warn",
     "react/jsx-uses-react": "warn"

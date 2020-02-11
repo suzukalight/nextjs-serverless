@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint --fix --ext .jsx,.js,.tsx,.ts ./components ./pages"
+    "lint": "eslint '*/**/*.{js,jsx,ts,tsx}' --quiet --fix"
   },
   "dependencies": {
     "next": "9.2.1",
